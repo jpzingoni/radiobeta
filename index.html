@@ -1,25 +1,31 @@
-<!DOCTYPE html>
-<html>
-
-    <head>
-
-        <title> Prueba de Reproductor</title>
-        <script type="text/javascript" src="main.js"></script>
-        <meta charset="utf-8">
-
-    </head>
-
-    <body> 
-        
-        <audio controls >
-            <source  src="songs/01.mp3">
-            <source  src="songs/02.mp3">
-        </audio>
-        
-        <div>
-            <button id="anterior"> Retroceder   </button>
-            <button id="escuchar"> Play/Pause  </button>
-            <button id="siguiente"> Adelantar   </button>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./normalize.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <script src="./main.js"></script>
+    <title>La Radio Del Ruso</title>
+</head>
+<body>
+    <div class="conteiner">
+        <h1>LA RADIO DEL RUSO</h1>
+        <div class="radio">
+             <audio controls class="musica">
+                 <source  src="songs/01.mp3">
+                 <source  src="songs/02.mp3">
+                 <source  src="songs/03.mp3">
+            </audio>
         </div>
-    </body>
+        <div class="controls">
+            <button class="button" id="anterior"> </button>
+            <button class="button" id="escuchar">    </button>
+            <button class="button" id="siguiente">   </button>
+        </div>
+    </div>
+
+</body>
 </html>
