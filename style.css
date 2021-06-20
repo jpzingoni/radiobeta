@@ -20,8 +20,8 @@ h1{
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     transition: all;
-    animation-play-state: paused
-
+    animation-play-state: paused;
+    text-align: center;
 }
 
 .radio{
