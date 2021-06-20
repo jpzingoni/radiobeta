@@ -1,0 +1,90 @@
+.conteiner{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url("./images/colors.jpg");
+}
+
+h1{
+    font-family: 'Anton', sans-serif;
+    font-size: 300%;
+    text-shadow: 1px 2px whitesmoke;
+    letter-spacing: 5px;
+    position: absolute;
+    top: 8%;
+    animation: rotate;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transition: all;
+    animation-play-state: paused
+
+}
+
+.radio{
+    width: 50%;
+    height: 50%;
+    background-image: url("./images/radio.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.musica{
+    display: none;
+}
+
+.controls{
+    position: relative;
+    width: 50%;
+    height: 15%;
+    display: flex;
+    justify-content: space-around;
+}
+.button{
+    width: 15%;
+    height: 100%;
+    background-image: url("./images/start.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 20%;
+}
+
+#escuchar{
+    background-image: url("./images/start.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 20%;
+    background-size: contain;
+}
+#anterior{
+    background-image: url("./images/rewind.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 20%;
+    background-size: contain;
+}
+
+#siguiente{
+    background-image: url("./images/next.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 20%;
+    background-size: contain;
+}
+
+
+@keyframes rotate {
+    0%{-webkit-transform: rotate(0deg);}
+    
+    25%{ -webkit-transform: rotate(10deg);}
+    
+    50%{-webkit-transform: rotate(0deg);}
+
+    75%{-webkit-transform: rotate(-10deg)}
+    
+    100%{-webkit-transform: rotate(0deg);}
+}
