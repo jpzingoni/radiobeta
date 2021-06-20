@@ -43,14 +43,12 @@ window.onload = function(){
             audio.src = canciones[songsInLibrary].src
             escuchando = songsInLibrary
             arranque = audio.pause
-            console.log(escuchando)
             h1.style.animationPlayState = "paused"
          }
         if(escuchando < canciones.length){
            audio.src = canciones[escuchando].src
            console.log(audio.src)
            escuchando--
-           console.log(escuchando)
            arranque = audio.pause
            h1.style.animationPlayState = "paused"
         }
